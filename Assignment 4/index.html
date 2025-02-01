@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="Dziwanowski">
+    <title>Assignment 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #c559f0, #eb8578);
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            padding: 20px;
+        }
+        .grid-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: scale(105%);
+        }
+        .grid-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .caption {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+        }
+        footer {
+            padding: 20px;
+            font-style: italic;
+            font-size: 16px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>Andrew's Dream Board</header>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="Content_creator.jpg" alt="Content Creator image">
+        </div>
+        <div class="grid-item">
+            <div class="caption">My dream job would be to be a full-time content creator! I love streaming and playing games and just being myself overall. I also really like performing in general and theres no better way to do that than to content creation!</div>
+        </div>
+        <div class="grid-item">
+            <img src="japan.jpg" alt="Picture of Japan">
+        </div>
+        <div class="grid-item">
+            <div class="caption">I would love to go to Japan! The sooner the better! I have been researching and watching content about things to do there for years! Most of it is just food content but there is so much to do!</div>
+        </div>
+        <div class="grid-item">
+            <img src="music.jpg" alt="Dream 3">
+        </div>
+        <div class="grid-item">
+            <div class="caption">A dream of mine is to learn how to make music! Music is a very big part of my life so it makes sense that I would want to make some one day!</div>
+        </div>
+    </div>
+    <footer>"You've made it through all your worst days. You just need to keep going!"</footer>
+</body>
+</html>
